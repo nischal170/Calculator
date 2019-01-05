@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.vansoft.calculator.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/relativeLayout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Edittext"
+            android:inputType="number"/>
+
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button7"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/letter9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/equals"
+            style="@style/]@android:style/Widget.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="@string/equals" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonplus"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_plus" />
+
+            <Button
+                android:id="@+id/buttonminus"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/operation_minus" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_toStartOf="@+id/linearLayout5"
+        android:id="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/multi"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/multiply" />
+
+            <Button
+                android:id="@+id/button0"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/letter0" />
+
+            <Button
+                android:id="@+id/divide"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/divide" />
+
+            <Button
+                android:id="@+id/dot"
+                style="@android:style/Widget.Button.Inset"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dot" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <Button
+            android:id="@+id/buttonAC"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/AC" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/buttonAC"
+            android:text="Button" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
